@@ -16,4 +16,5 @@ helm install rancher rancher-stable/rancher \
   --namespace cattle-system \
   --set ingress.ingressClassName=nginx \
   --set hostname=rancher.${IP_ADDRESS}.nip.io \
-  --set bootstrapPassword=admin
+  --set bootstrapPassword=admin \
+  --set replicas=${NODE_COUNT}
