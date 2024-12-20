@@ -9,7 +9,7 @@ az aks create \
   --name ${APP}-aks-cluster \
   --kubernetes-version ${K8S_VERSION} \
   --node-count ${NODE_COUNT} \
-  --node-vm-size $VM_SIZE \
+  --node-vm-size ${VM_SIZE} \
   --generate-ssh-keys
 
 echo "Getting credentials and storing them in kubeconfig"
