@@ -41,6 +41,5 @@ resource "azurerm_kubernetes_cluster" "k8s" {
   network_profile {
     network_plugin    = "azure"
     network_plugin_mode = "overlay"
-    load_balancer_sku = "standard"
   }
 }
